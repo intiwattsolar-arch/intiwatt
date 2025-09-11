@@ -21,8 +21,14 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
+            <a href="#" className="text-foreground hover:text-primary transition-colors">
+              Inicio
+            </a>
+            <a href="#quienes-somos" className="text-foreground hover:text-primary transition-colors">
+              Quiénes Somos
+            </a>
             <a href="#soluciones" className="text-foreground hover:text-primary transition-colors">
-              Soluciones
+              Qué Hacemos
             </a>
             <a href="#domotica" className="text-foreground hover:text-primary transition-colors">
               Domótica
@@ -54,11 +60,25 @@ const Header = () => {
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
               <a
+                href="#"
+                className="text-foreground hover:text-primary transition-colors py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Inicio
+              </a>
+              <a
+                href="#quienes-somos"
+                className="text-foreground hover:text-primary transition-colors py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Quiénes Somos
+              </a>
+              <a
                 href="#soluciones"
                 className="text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsOpen(false)}
               >
-                Soluciones
+                Qué Hacemos
               </a>
               <a
                 href="#domotica"
