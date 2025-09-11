@@ -18,9 +18,13 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
         <div className="max-w-3xl">
-          <div className="flex items-center gap-2 mb-6">
-            <Zap className="text-solar-gold" size={32} />
-            <span className="text-solar-gold text-xl font-semibold">IntiWatt</span>
+          <div className="flex items-center gap-3 mb-6">
+            <img 
+              src="/lovable-uploads/f97859da-5fec-4745-aead-162afc78c4f0.png"
+              alt="IntiWatt Logo"
+              className="h-8 w-8"
+            />
+            <span className="text-white text-xl font-semibold">IntiWatt</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">

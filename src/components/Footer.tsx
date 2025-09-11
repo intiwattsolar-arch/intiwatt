@@ -12,10 +12,12 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <div className="text-2xl font-bold bg-gradient-to-r from-solar-gold to-energy-green bg-clip-text text-transparent">
-                IW
-              </div>
-              <div className="ml-2 text-xl font-semibold">INTIWATT</div>
+              <img 
+                src="/lovable-uploads/f97859da-5fec-4745-aead-162afc78c4f0.png"
+                alt="IntiWatt Logo"
+                className="h-8 w-8 mr-3"
+              />
+              <div className="text-xl font-semibold">INTIWATT</div>
             </div>
             <p className="text-white/80 text-sm">
               Técnica con propósito. Energía con rebeldía.

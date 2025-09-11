@@ -11,10 +11,12 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold bg-gradient-to-r from-ocean-blue to-energy-green bg-clip-text text-transparent">
-              IW
-            </div>
-            <div className="ml-2 text-xl font-semibold text-foreground">INTIWATT</div>
+            <img 
+              src="/lovable-uploads/f97859da-5fec-4745-aead-162afc78c4f0.png"
+              alt="IntiWatt Logo"
+              className="h-10 w-10 mr-3"
+            />
+            <div className="text-xl font-semibold text-foreground">INTIWATT</div>
           </div>
 
           {/* Desktop Navigation */}
