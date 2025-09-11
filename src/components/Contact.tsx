@@ -4,21 +4,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { 
-  MessageCircle, 
-  Mail, 
-  MapPin, 
-  Phone,
-  Send
-} from "lucide-react";
-
+import { MessageCircle, Mail, MapPin, Phone, Send } from "lucide-react";
 const Contact = () => {
   const handleWhatsApp = () => {
     window.open("https://wa.me/5493518670464", "_blank");
   };
-
-  return (
-    <section id="contacto" className="py-20 bg-background">
+  return <section id="contacto" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4">
@@ -62,7 +53,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                        <p className="text-muted-foreground mb-2">hola@intiwatt.com</p>
+                        <p className="text-muted-foreground mb-2">info@intiwatt.com</p>
                         <Badge variant="outline" className="text-xs">Consultas técnicas y presupuestos</Badge>
                       </div>
                     </div>
@@ -77,7 +68,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-foreground mb-1">Ubicación</h4>
-                        <p className="text-muted-foreground mb-2">Córdoba y Santiago del Estero</p>
+                        <p className="text-muted-foreground mb-2">Calle Centro America 4, Córdoba y Santiago del Estero</p>
                         <Badge variant="outline" className="text-xs">Argentina</Badge>
                       </div>
                     </div>
@@ -125,11 +116,7 @@ const Contact = () => {
               
               <div className="space-y-2">
                 <Label htmlFor="message">Mensaje *</Label>
-                <Textarea
-                  id="message"
-                  placeholder="Contanos sobre tu proyecto, consumo mensual aproximado, ubicación, etc."
-                  className="min-h-[120px]"
-                />
+                <Textarea id="message" placeholder="Contanos sobre tu proyecto, consumo mensual aproximado, ubicación, etc." className="min-h-[120px]" />
               </div>
               
               <Button variant="energy" size="lg" className="w-full group">
@@ -144,8 +131,6 @@ const Contact = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
