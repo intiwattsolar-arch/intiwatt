@@ -47,6 +47,23 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Energy theme colors
+        solar: {
+          gold: "hsl(var(--solar-gold))",
+          DEFAULT: "hsl(var(--solar-gold))",
+        },
+        ocean: {
+          blue: "hsl(var(--ocean-blue))",
+          DEFAULT: "hsl(var(--ocean-blue))",
+        },
+        energy: {
+          green: "hsl(var(--energy-green))",
+          DEFAULT: "hsl(var(--energy-green))",
+        },
+        tech: {
+          navy: "hsl(var(--tech-navy))",
+          DEFAULT: "hsl(var(--tech-navy))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

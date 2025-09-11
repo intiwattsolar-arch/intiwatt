@@ -15,6 +15,9 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        hero: "bg-gradient-to-r from-solar-gold to-energy-green text-tech-navy font-semibold shadow-solar hover:shadow-glow transition-all duration-300 hover:scale-105",
+        energy: "bg-gradient-to-r from-ocean-blue to-primary text-primary-foreground shadow-energy hover:shadow-glow transition-all duration-300",
+        solar: "bg-solar-gold text-tech-navy font-medium hover:bg-solar-gold/90 shadow-solar transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
