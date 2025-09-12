@@ -27,13 +27,16 @@ const Header = () => {
             <a href="#quienes-somos" className="text-foreground hover:text-primary transition-colors">
               Quiénes Somos
             </a>
+            <a href="#estudio-gratis" className="text-foreground hover:text-primary transition-colors">
+              Estudio Gratis
+            </a>
             <a href="#soluciones" className="text-foreground hover:text-primary transition-colors">
               Qué Hacemos
             </a>
             <a href="#contacto" className="text-foreground hover:text-primary transition-colors">
               Contacto
             </a>
-            <Button variant="energy" size="sm">
+            <Button variant="energy" size="sm" onClick={() => document.getElementById('estudio-gratis')?.scrollIntoView({ behavior: 'smooth' })}>
               Estudio Gratis
             </Button>
           </nav>
@@ -68,6 +71,13 @@ const Header = () => {
                 Quiénes Somos
               </a>
               <a
+                href="#estudio-gratis"
+                className="text-foreground hover:text-primary transition-colors py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Estudio Gratis
+              </a>
+              <a
                 href="#soluciones"
                 className="text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsOpen(false)}
@@ -81,7 +91,15 @@ const Header = () => {
               >
                 Contacto
               </a>
-              <Button variant="energy" size="sm" className="w-fit">
+              <Button 
+                variant="energy" 
+                size="sm" 
+                className="w-fit"
+                onClick={() => {
+                  setIsOpen(false);
+                  document.getElementById('estudio-gratis')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Estudio Gratis
               </Button>
             </nav>
