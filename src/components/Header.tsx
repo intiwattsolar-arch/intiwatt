@@ -30,12 +30,6 @@ const Header = () => {
             <a href="#soluciones" className="text-foreground hover:text-primary transition-colors">
               Qué Hacemos
             </a>
-            <a href="#domotica" className="text-foreground hover:text-primary transition-colors">
-              Domótica
-            </a>
-            <a href="#monitoreo" className="text-foreground hover:text-primary transition-colors">
-              Monitoreo
-            </a>
             <a href="#contacto" className="text-foreground hover:text-primary transition-colors">
               Contacto
             </a>
@@ -79,20 +73,6 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Qué Hacemos
-              </a>
-              <a
-                href="#domotica"
-                className="text-foreground hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                Domótica
-              </a>
-              <a
-                href="#monitoreo"
-                className="text-foreground hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                Monitoreo
               </a>
               <a
                 href="#contacto"
