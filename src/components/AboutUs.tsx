@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Target, Zap, Shield } from "lucide-react";
-
 const AboutUs = () => {
-  return (
-    <section id="quienes-somos" className="py-20 bg-tech-navy text-white relative overflow-hidden">
+  return <section id="quienes-somos" className="py-20 bg-tech-navy text-white relative overflow-hidden">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-tech-navy via-tech-navy/95 to-ocean-blue/20"></div>
       
@@ -20,9 +18,7 @@ const AboutUs = () => {
         <div className="max-w-4xl mx-auto space-y-12">
           {/* Introducción */}
           <div className="text-center">
-            <p className="text-lg leading-relaxed text-white/90">
-              Somos la insurgencia energética: un equipo técnico, rebelde y transparente que rompe con el viejo modelo eléctrico. Nuestra misión es simple y radical: que vos dejes de ser rehén de tarifas que solo suben, y empieces a generar tu propia energía limpia, eficiente y rentable.
-            </p>
+            <p className="text-lg leading-relaxed text-white/90">Somos la insurgencia energética: un equipo técnico, rebelde y transparente que rompe con el viejo modelo eléctrico. Nuestra misión es simple y radical: que vos dejes de pagar por lo menos la mitad de esas tarifas que solo suben, y empieces a generar tu propia energía limpia, eficiente y rentable.</p>
           </div>
 
           {/* Nuestra identidad */}
@@ -31,9 +27,14 @@ const AboutUs = () => {
               Nuestra identidad
             </h3>
             <div className="space-y-4 text-white/90 leading-relaxed">
-              <p>
-                Fusionamos lo ancestral con lo tecnológico: el Sol Inca convertido en ingeniería de vanguardia.
-              </p>
+              <p>Qué es:
+IntiWatt es una empresa dedicada a la energía solar y la eficiencia energética, enfocada en el desarrollo, instalación y gestión integral de sistemas fotovoltaicos. Su propósito es transformar el modo en que hogares, empresas y comunidades generan y consumen energía, combinando ingeniería, tecnología y sostenibilidad.
+
+Por qué:
+Surge ante la necesidad de independencia energética y ahorro real frente al costo creciente de la energía. IntiWatt impulsa la transición hacia un modelo energético descentralizado, confiable y limpio, adaptado al contexto argentino y al entorno del interior del país. Promueve la energía solar como herramienta económica, técnica y ambientalmente viable.
+
+Para qué:
+Para democratizar el acceso a la energía solar, mejorar la eficiencia de consumo, reducir el impacto ambiental y fortalecer la autonomía de los usuarios. IntiWatt busca que cada instalación sea un sistema inteligente, seguro y rentable, con soporte técnico profesional y visión a largo plazo.</p>
               <p>
                 Defendemos la sostenibilidad real, sin discursos vacíos: sistemas dimensionados con rigor científico, bajo normativa argentina.
               </p>
@@ -77,9 +78,7 @@ const AboutUs = () => {
               <p className="text-lg leading-relaxed text-white/90 mb-4">
                 La energía no es un lujo. Es soberanía, autonomía y futuro.
               </p>
-              <p className="text-lg leading-relaxed text-white/90">
-                En IntiWatt trabajamos para democratizarla, con soluciones solares que hagan que cada hogar, empresa o comunidad pueda mirar el sol y decir: "ahora la energía es mía".
-              </p>
+              <p className="text-lg leading-relaxed text-white/90">En IntiWatt trabajamos para democratizarla, con soluciones solares que hagan que cada hogar, empresa/industria o comunidad pueda mirar el sol y decir: "ahora la energía es mía".</p>
             </div>
           </div>
         </div>
@@ -91,27 +90,18 @@ const AboutUs = () => {
               ¿Listo para tu estudio solar?
             </h3>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                variant="hero" 
-                size="lg"
-                onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
-              >
+              <Button variant="hero" size="lg" onClick={() => document.getElementById('contacto')?.scrollIntoView({
+              behavior: 'smooth'
+            })}>
                 Solicitá tu estudio solar gratis
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-solar-gold text-solar-gold hover:bg-solar-gold hover:text-tech-navy"
-                onClick={() => window.open('https://wa.me/message/DIYCFTTWXSNXM1', '_blank')}
-              >
+              <Button variant="outline" size="lg" className="border-solar-gold text-solar-gold hover:bg-solar-gold hover:text-tech-navy" onClick={() => window.open('https://wa.me/message/DIYCFTTWXSNXM1', '_blank')}>
                 Escribime por WhatsApp
               </Button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutUs;
