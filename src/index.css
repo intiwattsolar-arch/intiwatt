@@ -8,50 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 30% 98%;
-    --foreground: 215 25% 15%;
+    --background: 0 0% 8%;
+    --foreground: 45 100% 65%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card: 0 0% 12%;
+    --card-foreground: 45 100% 65%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 45 100% 65%;
 
-    --primary: 201 85% 35%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 45 100% 65%;
+    --primary-foreground: 0 0% 8%;
 
-    --secondary: 45 93% 60%;
-    --secondary-foreground: 215 25% 15%;
+    --secondary: 45 90% 55%;
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 215 20% 93%;
-    --muted-foreground: 215 25% 45%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 45 70% 60%;
 
-    --accent: 158 65% 50%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 45 95% 70%;
+    --accent-foreground: 0 0% 8%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 45 100% 65%;
 
-    --border: 215 20% 85%;
-    --input: 215 20% 85%;
-    --ring: 201 85% 35%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 45 100% 65%;
 
-    /* Energy-themed design tokens */
-    --solar-gold: 45 93% 60%;
-    --ocean-blue: 201 85% 35%;
-    --energy-green: 158 65% 50%;
-    --tech-navy: 215 45% 25%;
+    /* IntiWatt themed design tokens */
+    --solar-gold: 45 100% 65%;
+    --golden-accent: 45 95% 70%;
+    --dark-bg: 0 0% 8%;
+    --tech-black: 0 0% 12%;
     
     /* Gradients */
-    --gradient-solar: linear-gradient(135deg, hsl(45 93% 60%), hsl(35 85% 55%));
-    --gradient-energy: linear-gradient(135deg, hsl(201 85% 35%), hsl(158 65% 50%));
-    --gradient-hero: linear-gradient(135deg, hsl(215 45% 25%), hsl(201 85% 35%));
-    --gradient-subtle: linear-gradient(180deg, hsl(220 30% 98%), hsl(215 20% 93%));
+    --gradient-solar: linear-gradient(135deg, hsl(45 100% 65%), hsl(45 95% 55%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 100% 65%), hsl(45 85% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 8% / 0.9), hsl(0 0% 12% / 0.85));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 8%), hsl(0 0% 12%));
     
     /* Shadows */
-    --shadow-solar: 0 10px 30px -10px hsl(45 93% 60% / 0.3);
-    --shadow-energy: 0 10px 30px -10px hsl(201 85% 35% / 0.25);
-    --shadow-glow: 0 0 40px hsl(45 93% 60% / 0.4);
+    --shadow-solar: 0 10px 30px -10px hsl(45 100% 65% / 0.5);
+    --shadow-gold: 0 10px 30px -10px hsl(45 95% 70% / 0.4);
+    --shadow-glow: 0 0 40px hsl(45 100% 65% / 0.6);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

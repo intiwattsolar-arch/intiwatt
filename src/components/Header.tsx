@@ -12,21 +12,21 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center group">
             <img 
-              src="/lovable-uploads/f97859da-5fec-4745-aead-162afc78c4f0.png"
+              src="/src/assets/logo-intiwatt.png"
               alt="IntiWatt Logo"
-              className="h-10 w-10 mr-3"
+              className="h-10 w-10 mr-3 transition-transform group-hover:scale-105"
             />
             <div className="text-xl font-semibold text-foreground">INTIWATT</div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-[clamp(8px,1.2vw,18px)] whitespace-nowrap">
-            <a href="#" className="text-foreground hover:text-primary transition-colors text-sm xl:text-base font-medium">
+            <Link to="/" className="text-foreground hover:text-primary transition-colors text-sm xl:text-base font-medium">
               Inicio
-            </a>
-            <a href="#quienes-somos" className="text-foreground hover:text-primary transition-colors text-sm xl:text-base font-medium">
+            </Link>
+            <a href="/#quienes-somos" className="text-foreground hover:text-primary transition-colors text-sm xl:text-base font-medium">
               Quiénes Somos
             </a>
             
@@ -72,7 +72,7 @@ const Header = () => {
               </DropdownMenuContent>
             </DropdownMenu>
             
-            <a href="#contacto" className="text-foreground hover:text-primary transition-colors text-sm xl:text-base font-medium">
+            <a href="/#contacto" className="text-foreground hover:text-primary transition-colors text-sm xl:text-base font-medium">
               Contacto
             </a>
             <Button variant="energy" size="sm" onClick={() => document.getElementById('estudio-gratis')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -82,10 +82,10 @@ const Header = () => {
 
           {/* Tablet Navigation */}
           <nav className="hidden md:flex lg:hidden items-center gap-4 text-sm">
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/" className="text-foreground hover:text-primary transition-colors">
               Inicio
-            </a>
-            <a href="#quienes-somos" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <a href="/#quienes-somos" className="text-foreground hover:text-primary transition-colors">
               Quiénes Somos
             </a>
             <DropdownMenu>
@@ -124,15 +124,15 @@ const Header = () => {
         {isOpen && (
           <div id="mobile-menu" className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsOpen(false)}
               >
                 Inicio
-              </a>
+              </Link>
               <a
-                href="#quienes-somos"
+                href="/#quienes-somos"
                 className="text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsOpen(false)}
               >
@@ -167,7 +167,7 @@ const Header = () => {
                 Monitoreo
               </Link>
               <a
-                href="#contacto"
+                href="/#contacto"
                 className="text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsOpen(false)}
               >
