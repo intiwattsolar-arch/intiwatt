@@ -28,21 +28,25 @@ const Hero = () => {
             <span className="text-solar-gold text-2xl font-bold">IntiWatt</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="text-solar-gold">La insurgencia</span>
-            <span className="block text-golden-accent">
-              energética
-            </span>
-          </h1>
+          <div className="panel-opaque-light p-6 rounded-xl mb-6">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+              <span className="text-solar-gold">La insurgencia</span>
+              <span className="block text-golden-accent">
+                energética
+              </span>
+            </h1>
+          </div>
           
-          <p className="text-xl md:text-2xl mb-4 text-solar-gold/80 leading-relaxed">
-            Donde otros venden equipos,
-          </p>
-          <p className="text-xl md:text-2xl mb-8 text-golden-accent leading-relaxed font-semibold">
-            nosotros diseñamos resultados
-          </p>
+          <div className="panel-opaque-light p-5 rounded-xl mb-8 inline-block">
+            <p className="text-xl md:text-2xl mb-3 text-solar-gold/90 leading-relaxed">
+              Donde otros venden equipos,
+            </p>
+            <p className="text-xl md:text-2xl text-golden-accent leading-relaxed font-semibold">
+              nosotros diseñamos resultados
+            </p>
+          </div>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button variant="hero" size="lg" className="group">
               Solicitá tu estudio solar gratis
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
