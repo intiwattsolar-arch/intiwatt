@@ -95,13 +95,23 @@ const Header = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56 bg-background border border-border shadow-lg z-50">
                 <DropdownMenuItem asChild>
-                  <a href="#estudio-gratis" className="cursor-pointer">Estudio Gratis</a>
+                  <a href="/#estudio-gratis" className="cursor-pointer">Estudio Gratis</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="#soluciones" className="cursor-pointer">Qué Hacemos</a>
+                  <a href="/#soluciones" className="cursor-pointer">Qué Hacemos</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="#contacto" className="cursor-pointer">Contacto</a>
+                  <a href="/#contacto" className="cursor-pointer">Contacto</a>
+                </DropdownMenuItem>
+                <div className="px-2 py-1.5 text-sm font-semibold text-muted-foreground border-t border-border mt-1">Nuestros trabajos</div>
+                <DropdownMenuItem asChild>
+                  <Link to="/nuestras-obras/residencial" className="cursor-pointer">Residencial</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/nuestras-obras/industrial" className="cursor-pointer">Industrial</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/nuestras-obras/plantas" className="cursor-pointer">Grandes plantas</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

@@ -41,6 +41,10 @@ All colors MUST be HSL.
     --golden-accent: 45 95% 70%;
     --dark-bg: 0 0% 8%;
     --tech-black: 0 0% 12%;
+    /* Compatibility tokens (used across components) */
+    --ocean-blue: 201 85% 35%;
+    --energy-green: 158 65% 50%;
+    --tech-navy: 215 45% 25%;
     
     /* Gradients */
     --gradient-solar: linear-gradient(135deg, hsl(45 100% 65%), hsl(45 95% 55%));
@@ -122,5 +126,20 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .panel-opaque {
+    background-color: hsl(var(--tech-black) / 0.75);
+    border: 1px solid hsl(var(--solar-gold) / 0.15);
+    border-radius: var(--radius);
+    backdrop-filter: blur(2px);
+  }
+  .panel-opaque-light {
+    background-color: hsl(var(--dark-bg) / 0.6);
+    border: 1px solid hsl(var(--solar-gold) / 0.1);
+    border-radius: var(--radius);
+    backdrop-filter: blur(2px);
   }
 }
