@@ -2,27 +2,28 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 import { X } from "lucide-react";
+import industrialImage1 from "@/assets/industrial-solar-panel-1.jpg";
+import industrialImage2 from "@/assets/industrial-solar-panel-2.jpg";
 
 const IndustrialPage = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // Placeholder data - ready for real content
   const projects = [
     {
       id: 1,
-      title: "Fábrica Metalúrgica",
+      title: "Sistema Fotovoltaico On-Grid Industrial",
       location: "Córdoba",
       power: "150 kWp",
-      description: "Sistema industrial con consumo diurno optimizado",
-      image: "/placeholder.svg",
+      description: "Sistema fotovoltaico On-Grid con inyección cero. Consumo directo de energía solar dentro de la planta, reducción del 50% del consumo diurno. Retorno de inversión: 2.5-3.5 años.",
+      image: industrialImage1,
     },
     {
       id: 2,
-      title: "Planta de Alimentos",
-      location: "Villa María",
-      power: "85 kWp",
-      description: "Instalación en nave industrial con cámaras frigoríficas",
-      image: "/placeholder.svg",
+      title: "Sistema Híbrido con Baterías de Litio",
+      location: "Santiago del Estero",
+      power: "300 kWp",
+      description: "Solución híbrida para procesos continuos. Incluye banco de baterías de litio, control inteligente de consumo y almacenamiento. Energía asegurada ante cortes y reducción de demanda en punta.",
+      image: industrialImage2,
     },
   ];
 
@@ -85,11 +86,27 @@ const IndustrialPage = () => {
               ))}
             </div>
 
-            {/* Empty State Message */}
-            <div className="text-center mt-16 p-8 bg-muted/50 rounded-xl">
-              <p className="text-muted-foreground">
-                Galería en preparación. Próximamente mostraremos nuestros proyectos industriales más destacados.
-              </p>
+            {/* Benefits Section */}
+            <div className="mt-16 panel-opaque-light rounded-xl p-8">
+              <h2 className="text-2xl font-bold text-foreground mb-6">Beneficios de Nuestros Sistemas Industriales</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="font-semibold text-lg mb-2">Ahorro Económico</h3>
+                  <p className="text-muted-foreground">Reducción del 10% al 30% en la factura mensual. Ahorro anual estimado: USD 25,000-30,000 para instalaciones de 150 kWp.</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-2">Cumplimiento Normativo</h3>
+                  <p className="text-muted-foreground">Cumple con la Ley N° 27.191: 20% de energía renovable obligatorio para empresas que consumen más de 300 kW.</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-2">Impacto Ambiental</h3>
+                  <p className="text-muted-foreground">Evita entre 100-200 toneladas de CO₂ al año. Cero consumo de agua, sin emisiones contaminantes locales.</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-2">Retorno Rápido</h3>
+                  <p className="text-muted-foreground">Payback de 2.5-3.5 años. Vida útil del sistema: más de 20 años con mantenimiento mínimo.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
