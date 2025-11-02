@@ -2,8 +2,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 import { X } from "lucide-react";
-import industrialImage1 from "@/assets/industrial-solar-panel-1.jpg";
-import industrialImage2 from "@/assets/industrial-solar-panel-2.jpg";
+import hotelAgoraImg from "@/assets/industrial-hotel-agora.png";
+import arcorImg from "@/assets/industrial-arcor.png";
+import santanderImg from "@/assets/industrial-santander.png";
+import naturaliaImg from "@/assets/industrial-naturalia.png";
+import plantaAisladaImg from "@/assets/industrial-planta-aislada.png";
+import ecoHotelImg from "@/assets/industrial-eco-hotel.png";
 
 const IndustrialPage = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -11,19 +15,51 @@ const IndustrialPage = () => {
   const projects = [
     {
       id: 1,
-      title: "Sistema Fotovoltaico On-Grid Industrial",
-      location: "Córdoba",
-      power: "150 kWp",
-      description: "Sistema fotovoltaico On-Grid con inyección cero. Consumo directo de energía solar dentro de la planta, reducción del 50% del consumo diurno. Retorno de inversión: 2.5-3.5 años.",
-      image: industrialImage1,
+      title: "Hotel One Ágora",
+      location: "Madrid, España",
+      power: "60 kWp",
+      description: "Plataforma solar industrial diseñada para reducir el consumo eléctrico del complejo hotelero. 60 paneles Trina Solar de 610 Wp con inversor SMA de 30 kW trifásico. Sistema operativo con monitoreo en tiempo real.",
+      image: hotelAgoraImg,
     },
     {
       id: 2,
-      title: "Sistema Híbrido con Baterías de Litio",
-      location: "Santiago del Estero",
-      power: "300 kWp",
-      description: "Solución híbrida para procesos continuos. Incluye banco de baterías de litio, control inteligente de consumo y almacenamiento. Energía asegurada ante cortes y reducción de demanda en punta.",
-      image: industrialImage2,
+      title: "Arcor Distribuidora",
+      location: "Santa Fe - Cañada de Gómez",
+      power: "61.95 kWp",
+      description: "Instalación solar sobre techo de chapa coplanar para abastecer parte del consumo energético de la planta. 105 paneles Risen Energy de 590 Wp con inversor Deye trifásico de 50 kW. Reducción del 35% del consumo eléctrico mensual.",
+      image: arcorImg,
+    },
+    {
+      id: 3,
+      title: "Ciudad Financiera del Banco Santander",
+      location: "Madrid, España",
+      power: "4.13 MWp",
+      description: "Gran escala ubicada en el campus corporativo. 7.000 paneles monocristalinos de 590 Wp con estructura coplanar tipo 'C' galvanizada. Replanteo, planificación y montaje coordinado por IntiWatt.",
+      image: santanderImg,
+    },
+    {
+      id: 4,
+      title: "Imagina Energía - Naturalia/Polígon",
+      location: "España",
+      power: "112.25 kWp",
+      description: "Instalación sobre cubierta metálica coplanar para planta industrial especializada en artículos de descanso. 195 módulos Hanwha Qcells de 575 Wp con inversor Sofar Solar de 100 kW. Sistema on-grid con inyección cero.",
+      image: naturaliaImg,
+    },
+    {
+      id: 5,
+      title: "Planta Solar Industrial Aislada",
+      location: "España",
+      power: "600 Wp",
+      description: "Primera etapa del proyecto enfocada en la ejecución de estructuras mediante hincado directo al terreno. Modalidad de montaje con hincado de perfiles metálicos sin fundaciones de hormigón. Base estructural sólida y duradera.",
+      image: plantaAisladaImg,
+    },
+    {
+      id: 6,
+      title: "Eco Hotel Pragma - BIPV",
+      location: "Añelo - Vaca Muerta",
+      power: "15 paneles",
+      description: "Instalación BIPV vertical tipo fachada coplanar activa con vidrio fotovoltaico. 15 paneles de vidrio laminado dispuestos en tres columnas verticales sobre la fachada principal del edificio. Integración arquitectónica de última generación.",
+      image: ecoHotelImg,
     },
   ];
 
